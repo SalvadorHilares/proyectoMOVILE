@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:theme="@style/Theme.Proyecto.AppBarOverlay">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registrarse"
+        android:textSize="35sp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="35dp"
+        />
+
+    <EditText
+        android:id="@+id/dni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:hint="@string/ingrese_su_dni" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:hint="@string/ingrese_su_nombre"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:hint="@string/ingrese_su_correo_electr_nico"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="113dp"
+        android:hint="@string/ingrese_su_contrase_a"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registrarse"
+        android:layout_marginLeft="60pt"
+        android:onClick="register"/>
+
+</LinearLayout>

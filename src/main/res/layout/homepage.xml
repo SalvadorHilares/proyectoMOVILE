@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:theme="@style/Theme.Proyecto.AppBarOverlay">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125pt"
+            android:text="@string/logout"
+            android:onClick="Logout"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/postear_un_producto"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/name_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_el_nombre_del_producto"
+        />
+
+    <EditText
+        android:id="@+id/price_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_el_precio_del_producto"
+        />
+
+    <EditText
+        android:id="@+id/characters_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_las_caracter_sticas_del_producto"
+        />
+
+    <EditText
+        android:id="@+id/time_init_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_la_hora_de_inicio_de_la_subasta"
+        />
+
+    <EditText
+        android:id="@+id/time_final_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_la_hora_de_fin_de_la_subasta"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/postear"
+        android:onClick="Post"/>
+
+    <TextView
+        android:id="@+id/place_proucts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tus_productos"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/my_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tus_productos"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recargar_tu_billetera"
+        android:layout_marginTop="20dp"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/money_actual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dinero_actual_20_00_soles"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_el_precio_a_recargar_en_soles"
+        android:inputType="numberDecimal"
+        />
+
+    <Button
+        android:id="@+id/recharge_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recargar"
+        android:onClick="Recharge"/>
+
+</LinearLayout>

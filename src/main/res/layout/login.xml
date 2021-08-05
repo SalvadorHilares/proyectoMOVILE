@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:theme="@style/Theme.Proyecto.AppBarOverlay">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registrarse"
+            android:layout_marginStart="118pt"
+            android:onClick="Registrar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/login"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:hint="@string/ingrese_su_nombre"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:hint="@string/ingrese_su_contrase_a"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logearse"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="63pt"
+        android:onClick="login"/>
+
+</LinearLayout>
